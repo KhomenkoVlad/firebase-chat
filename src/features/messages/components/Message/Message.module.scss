@@ -1,0 +1,27 @@
+@use "styles/base" as *;
+
+.currentUser {
+  align-self: end;
+  max-width: 80%;
+}
+
+.otherUser {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: 90%;
+}
+
+.messageAvatar {
+  align-self: start;
+
+  & img,
+  & div {
+    height: 1.75rem;
+  }
+
+  & img {
+    font-size: 0;
+  }
+}

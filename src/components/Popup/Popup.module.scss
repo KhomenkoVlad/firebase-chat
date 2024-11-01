@@ -1,0 +1,26 @@
+@use "styles/base" as *;
+
+.popup {
+  height: 100dvh;
+  width: 100dvw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // display: flex;
+  background-color: rgba(#000000, 0.5);
+  z-index: 50;
+}
+
+.closing {
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  background-color: rgba(#000000, 0);
+}
+
+.closing > svg {
+  fill: $primary-color;
+  height: 2rem;
+}

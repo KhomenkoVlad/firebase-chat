@@ -1,0 +1,23 @@
+@use "styles/base" as *;
+
+.search {
+  color: $font-color-400;
+  background-color: $texture-color;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.65rem;
+  margin-block: 0.5rem;
+  flex-basis: 100%;
+}
+
+.icon {
+  fill: #676767;
+  height: 1rem;
+  margin-right: 0.85rem;
+  display: inline-block;
+}
+
+.input {
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+}

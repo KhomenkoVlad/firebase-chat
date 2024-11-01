@@ -1,0 +1,10 @@
+@import "styles/base";
+
+.logOut {
+  @extend .buttonIcon;
+  font-size: rem(14);
+}
+
+.logOut > svg {
+  fill: #222;
+}

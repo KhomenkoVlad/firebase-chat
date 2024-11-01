@@ -1,0 +1,65 @@
+{
+  "navBar": {
+    "Messages": "Messages",
+    "Search": "Search",
+    "Settings": "Settings",
+    "Log out": "Log out",
+    "user": "user",
+    "Unreaded messages": "Unreaded messages",
+    "Nobody has seen": "Nobody has seen the message",
+    "A user has seen": "A user has seen the message"
+  },
+  "settings": {
+    "Go back": "Go back to home page",
+    "Languages": "Languages",
+    "User Settings": "User Settings",
+    "Change your info": "Change your info",
+    "Chat Settings": "Chat Settings",
+    "Change chat info": "Change chat's info",
+    "Change chat description": "If you change the default user's name, then the chat will become a public group.",
+    "New name": "New name or title",
+    "New picture": "New picture",
+    "Save": "Save",
+    "Delete the chat": "Delete the chat"
+  },
+  "chat": {
+    "chat": "chat",
+    "Chat picture": "Picture of the chat",
+    "Online": "Online",
+    "Offline": "Offline",
+    "Type message": "Type your message here...",
+    "Send": "Send",
+    "Attach an image": "Attach an image",
+    "Send a message": "Send a message"
+  },
+  "login": {
+    "Log In": "Log In",
+    "Registration": "Registration",
+    "Name": "Name",
+    "Email": "Email",
+    "Password": "Password",
+    "Your picture": "Your new avatar picture (optional)",
+    "Sign Up": "Sign Up",
+    "or": "or",
+    "Log in with Google": "Log in with Google",
+    "Sign up with Google": "Sign up with Google",
+    "dont have account": "Don’t you have an account?",
+    "have account": "Do you have an account?",
+    "Create new account": "Create new account"
+  },
+  "error": {
+    "Name is required": "Name is required",
+    "Email address is required": "Email address is required",
+    "Password is required": "Password is required",
+    "email or password": "The email address or password is incorrect",
+    "Name is too long": "Name is too long",
+    "Password is too long": "Password is too long",
+    "Password is too short": "Password is too short",
+    "Another account": "The email address is already in use by another account",
+    "Password is incorrect": "The email address or password is incorrect",
+    "Something went wrong": "Something went wrong"
+  },
+  "Close": "Close",
+  "personal": "personal",
+  "group": "group"
+}

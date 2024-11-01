@@ -1,0 +1,31 @@
+@use "styles/base" as *;
+
+.check {
+  grid-area: check;
+  justify-self: end;
+  align-self: end;
+}
+
+.check img {
+  height: 10px;
+}
+
+.unread {
+  grid-area: check;
+  justify-self: end;
+  align-self: end;
+  background-color: $primary-color;
+  border-radius: 50%;
+  width: rem(16);
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.unreadNumber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: rem(10);
+}

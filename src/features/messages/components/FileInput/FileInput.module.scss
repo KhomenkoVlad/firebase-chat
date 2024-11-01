@@ -1,0 +1,33 @@
+@use "styles/base" as *;
+
+.label {
+  display: block;
+  height: rem(60);
+  aspect-ratio: 1;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.labelImage {
+  background-size: cover;
+  background-color: initial;
+}
+
+.labelSvg {
+  background-size: 1rem;
+  background-color: $bg-color-300;
+}
+
+.label:hover {
+  opacity: 0.7;
+}
+
+.label > svg {
+  height: rem(16);
+}
+
+.input {
+  display: none;
+}

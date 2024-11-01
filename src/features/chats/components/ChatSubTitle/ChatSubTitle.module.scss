@@ -1,0 +1,14 @@
+@use "styles/base" as *;
+
+.offline {
+  font-size: rem(14);
+  color: $font-color-400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.online {
+  font-size: rem(14);
+  color: $primary-color;
+}

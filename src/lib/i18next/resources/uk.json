@@ -1,0 +1,65 @@
+{
+  "navBar": {
+    "Messages": "Повідомлення",
+    "Search": "Пошук",
+    "Settings": "Налаштування",
+    "Log out": "Вийти",
+    "user": "користувач",
+    "Unreaded messages": "Непрочитані повідомлення",
+    "Nobody has seen": "Ніхто не бачив повідомлення",
+    "A user has seen": "Користувач бачив повідомлення"
+  },
+  "settings": {
+    "Go back": "Повернутися на домашню сторінку",
+    "Languages": "Мови",
+    "User Settings": "Налаштування користувача",
+    "Change your info": "Змінити інформацію",
+    "Chat Settings": "Налаштування чату",
+    "Change chat info": "Змінити інформацію про чат",
+    "Change chat description": "Якщо ви зміните ім'я користувача за умовчанням, чат стане публічною групою.",
+    "New name": "Нове ім'я або назва",
+    "New picture": "Нове зображення",
+    "Save": "Зберегти",
+    "Delete the chat": "Видалити чат"
+  },
+  "chat": {
+    "chat": "чат",
+    "Chat picture": "Зображення чату",
+    "Online": "В мережі",
+    "Offline": "Поза мережею",
+    "Type message": "Введіть своє повідомлення тут...",
+    "Send": "Надіслати",
+    "Attach an image": "Вкласти зображення",
+    "Send a message": "Надіслати повідомлення"
+  },
+  "login": {
+    "Log In": "Увійти",
+    "Registration": "Реєстрація",
+    "Name": "Ім'я",
+    "Email": "Електронна пошта",
+    "Password": "Пароль",
+    "Your picture": "Ваше нове зображення аватара (необов'язково)",
+    "Sign Up": "Зареєструватися",
+    "or": "або",
+    "Log in with Google": "Увійти за допомогою Google",
+    "Sign up with Google": "Зареєструватися в Google",
+    "dont have account": "У вас немає облікового запису?",
+    "have account": "У вас є обліковий запис?",
+    "Create new account": "Створити новий обліковий запис"
+  },
+  "error": {
+    "Name is required": "Ім'я потрібно",
+    "Email address is required": "Потрібна адреса електронної пошти",
+    "Password is required": "Потрібен пароль",
+    "email or password": "Адреса електронної пошти або пароль неправильні",
+    "Name is too long": "Ім'я занадто довге",
+    "Password is too long": "Пароль занадто довгий",
+    "Password is too short": "Пароль занадто короткий",
+    "Another account": "Адреса електронної пошти вже використовується іншим обліковим записом",
+    "Password is incorrect": "Адреса електронної пошти або пароль неправильні",
+    "Some goes wrong": "Щось пішло не так"
+  },
+  "Close": "Закрити",
+  "personal": "особистий",
+  "group": "груповий"
+}

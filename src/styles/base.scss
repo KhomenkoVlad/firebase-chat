@@ -1,0 +1,96 @@
+$screen-mobile: 480px;
+$screen-tablet: 768px;
+$screen-laptop: 1200px;
+
+$primary-color: #27ae60;
+$secondary-color: #007aff;
+
+$font-color-100: #000000;
+$font-color-200: #262626;
+$font-color-300: #666666;
+$font-color-400: #8c8c8c;
+
+$bg-color-100: #ffffff;
+$bg-color-200: #fafafa;
+$bg-color-300: #f4f4f7;
+$bg-color-400: #eeeeee;
+$bg-color-500: #dcdcdc;
+$texture-color: #eeeeee;
+
+@mixin mobile {
+  @media screen and (max-width: $screen-mobile) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: $screen-tablet) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: $screen-tablet) {
+    @content;
+  }
+}
+
+@function rem($px) {
+  @return #{calc($px / 16)}rem;
+}
+
+.buttonReset {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.button {
+  @extend .buttonReset;
+
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.buttonSolid {
+  @extend .button;
+
+  color: #fff;
+  font-weight: 600;
+}
+
+.buttonOutline {
+  @extend .button;
+
+  background-color: $bg-color-300;
+  color: $font-color-100;
+  font-weight: 400;
+  border: 2px solid $texture-color;
+}
+
+.buttonIcon {
+  @extend .button;
+
+  background-color: #fff;
+  padding: 0.6em 0.8em;
+}
+
+.buttonIcon:hover {
+  background-color: $bg-color-400;
+}
+
+.buttonIcon > svg {
+  height: 1rem;
+  fill: #222;
+}
+
+.title {
+  font-size: rem(22);
+}
+
+.flexBreak {
+  flex-basis: 100%;
+  height: 0;
+}

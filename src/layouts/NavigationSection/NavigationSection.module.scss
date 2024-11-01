@@ -1,0 +1,30 @@
+@use "styles/base" as *;
+
+.navSection {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+
+  @include tablet {
+    flex: 0 0 rem(320);
+    border-right: 2px solid #ddd;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-inline: 1rem;
+}
+
+.title {
+  font-size: rem(22);
+  margin-block: rem(14);
+}
+
+.icons {
+  display: flex;
+  gap: rem(10);
+}

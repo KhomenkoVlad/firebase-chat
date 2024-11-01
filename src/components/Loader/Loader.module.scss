@@ -1,0 +1,33 @@
+@import "styles/base";
+
+.loader {
+  --_figure: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+
+  width: 50px;
+  padding: 8px;
+  margin: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: $secondary-color;
+  -webkit-mask: var(--_figure);
+  mask: var(--_figure);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.popup {
+  height: 100dvh;
+  width: 100dvw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: rgba(#ffffff, 0.5);
+}

@@ -1,0 +1,44 @@
+@import "styles/base";
+@import "styles/form";
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+}
+
+.closingButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.userName {
+  font-weight: 400;
+}
+
+.formTitle {
+  font-size: rem(18);
+  margin-block: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.error {
+  margin-top: rem(4);
+  margin-bottom: rem(12);
+}

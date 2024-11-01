@@ -1,0 +1,24 @@
+@use "styles/base" as *;
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid $texture-color;
+  background-color: $bg-color-200;
+}
+
+.error {
+  font-size: rem(12);
+  color: red;
+}
+
+.error:after {
+  content: "";
+  display: inline-block;
+}

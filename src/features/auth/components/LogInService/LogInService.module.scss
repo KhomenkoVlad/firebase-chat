@@ -1,0 +1,6 @@
+@use "styles/base" as *;
+
+.authButton {
+  @extend .buttonOutline;
+  width: 100%;
+}

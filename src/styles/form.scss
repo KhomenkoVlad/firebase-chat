@@ -1,0 +1,27 @@
+@import "styles/base";
+
+.form {
+  font-size: rem(16);
+
+  & > * + * {
+    margin-top: rem(12);
+  }
+}
+
+.submit {
+  @extend .buttonSolid;
+  background-color: $secondary-color;
+  width: 100%;
+}
+
+.error {
+  font-size: rem(14);
+  color: red;
+  text-align: center;
+  word-break: normal;
+}
+
+.error:after {
+  content: "";
+  display: inline-block;
+}

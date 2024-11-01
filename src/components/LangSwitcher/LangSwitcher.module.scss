@@ -1,0 +1,22 @@
+@use "styles/base" as *;
+
+.title {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.language {
+  display: inline;
+  font: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+}

@@ -1,0 +1,38 @@
+@import "styles/base";
+
+.page {
+  background-color: $bg-color-300;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+}
+
+.register {
+  width: 100%;
+  max-width: 20rem;
+  margin: auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  & > * + * {
+    margin-top: 1.5rem;
+  }
+
+  @include mobile {
+    padding: 1rem;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.other {
+  font-size: 0.875rem;
+  text-align: center;
+}

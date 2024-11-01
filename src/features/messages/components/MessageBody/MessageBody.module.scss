@@ -1,0 +1,30 @@
+@use "styles/base" as *;
+
+.message {
+  background-color: $bg-color-300;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  word-break: break-all;
+}
+
+.check {
+  height: rem(10);
+  margin-right: rem(8);
+}
+
+.time {
+  color: $font-color-400;
+  font-weight: 100;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  display: block;
+  padding-block: 0.5rem;
+  max-width: 100%;
+  max-height: rem(500);
+  cursor: pointer;
+}

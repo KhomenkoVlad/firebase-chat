@@ -1,0 +1,36 @@
+@use "styles/base" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-family: "SF Pro Display", sans-serif;
+
+  // @include tablet() {
+  //   font-size: 14px;
+  // }
+
+  // @include mobile() {
+  //   font-size: 12px;
+  // }
+}
+
+#root {
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: $secondary-color;
+}
+
+p {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}

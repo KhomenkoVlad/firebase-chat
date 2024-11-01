@@ -1,0 +1,10 @@
+@use "styles/base" as *;
+
+.type {
+  color: $font-color-400;
+  grid-area: message;
+  justify-self: start;
+  align-self: end;
+  line-height: 1;
+  font-style: italic;
+}

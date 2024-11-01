@@ -1,0 +1,22 @@
+@use "styles/base" as *;
+
+.separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 0;
+    display: inline-block;
+    flex-grow: 1;
+    border: 1px solid #999;
+  }
+}
+
+.text {
+  text-align: center;
+  display: inline-block;
+}
