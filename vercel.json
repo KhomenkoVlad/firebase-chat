@@ -1,7 +1,23 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/__/auth/:path*",
+      "destination": "https://simple-chat-7c398.firebaseapp.com/__/auth/:path*"
+    },
+    {
+      "source": "/login",
+      "destination": "/"
+    },
+    {
+      "source": "/register",
+      "destination": "/"
+    },
+    {
+      "source": "/user-settings",
+      "destination": "/"
+    },
+    {
+      "source": "/chat-settings",
       "destination": "/"
     }
   ]
