@@ -7,3 +7,6 @@ export * from "./types";
 
 // store:
 export * from "./store";
+
+// api:
+export * from "./api/create-chat";

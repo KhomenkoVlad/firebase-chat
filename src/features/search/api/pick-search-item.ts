@@ -6,16 +6,20 @@ import { AppDispatch } from "@/store";
 import { authSlice } from "@/features/auth";
 import { searchSlice } from "../store";
 
-export const pickSearchItem = async (data: SearchItemType, dispatch: AppDispatch) => {
+export const pickSearchItem = async (
+  data: SearchItemType,
+  dispatch: AppDispatch,
+  authUserId?: string
+) => {
   let chat;
 
   switch (data.category) {
     case "personal": {
-      chat = await createChat(data);
+      chat = await createChat(data.id, authUserId);
       break;
     }
     case "group": {
-      chat = await joinToGroup(data);
+      chat = await joinToGroup(data, authUserId);
       break;
     }
     default: {

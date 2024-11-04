@@ -1,13 +1,10 @@
 import { firestore } from "@/lib/firebase/init";
-import { store } from "@/store";
 import { arrayUnion, doc, getDoc, updateDoc } from "firebase/firestore";
 import { SearchItemType } from "../types";
 import { ChatType, getChatUsers, transformChat } from "@/features/chats";
 
-export const joinToGroup = async (group: SearchItemType) => {
-  const authUser = store.getState().auth.user;
-
-  if (!authUser || !group) return null;
+export const joinToGroup = async (group: SearchItemType, authUserId?: string) => {
+  if (!authUserId || !group) return null;
 
   try {
     const groupRef = doc(firestore, "chats", group.id);
@@ -15,9 +12,9 @@ export const joinToGroup = async (group: SearchItemType) => {
     const users = await getChatUsers(groupDoc.users);
 
     await updateDoc(groupRef, {
-      users: arrayUnion(authUser.id),
+      users: arrayUnion(authUserId),
     });
-    await updateDoc(doc(firestore, "users", authUser.id), {
+    await updateDoc(doc(firestore, "users", authUserId), {
       chats: arrayUnion(group.id),
     });
 
